@@ -1,0 +1,241 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harzzedix Editing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f8f9fb;
+      color: #222;
+      text-align: center;
+      padding: 20px;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4F46E5, #6D28D9);
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #eee;
+    }
+
+    section {
+      margin-top: 40px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #4F46E5;
+      margin-bottom: 10px;
+    }
+
+    /* About section */
+    .about {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      color: #444;
+      transform: translateY(30px);
+      transition: 0.8s ease;
+    }
+
+    .experience {
+      margin-top: 15px;
+      font-weight: 600;
+      color: #4F46E5;
+      font-size: 18px;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .service-box {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform: scale(0.95);
+    }
+
+    .service-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+    }
+
+    .service-box h3 {
+      color: #4F46E5;
+    }
+
+    .service-box p {
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #111;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #4F46E5, #6D28D9);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #6D28D9, #4F46E5);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harzzedix Editing</h1>
+    <p>🎬 Reels | Shorts | Gaming Edits</p>
+    <p>💰 Paid Edits via UPI / GPay</p>
+    <p>📩 Email: harzzedixbusiness@gmail.com</p>
+  </header>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>Hey there! 👋 I'm <b>Harzzedix</b>, a passionate video editor who loves creating high-quality and creative edits for reels, shorts, and gaming montages. I specialize in smooth transitions, trending effects, and professional sound design to make your content stand out!</p>
+      <p style="margin-top:10px;">Whether you're a creator, gamer, or influencer, I can help you make your videos go viral with engaging edits and eye-catching visuals.</p>
+      <div class="experience">🎯 3 Years of Editing Experience</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Services & Pricing</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>🎥 Reels / Shorts</h3>
+        <p>Quick viral-style edits with music sync and captions.</p>
+        <div class="price">From ₹150</div>
+      </div>
+
+      <div class="service-box">
+        <h3>🎮 Gaming Edits</h3>
+        <p>Montages, transitions, hype moments & sound design.</p>
+        <div class="price">From ₹300</div>
+      </div>
+
+      <div class="service-box">
+        <h3>🖼 Thumbnail & Poster</h3>
+        <p>Eye-catching thumbnails and posters for YouTube & Instagram.</p>
+        <div class="price">From ₹80</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIRE ME -->
+  <section id="hire">
+    <h2>Hire Me</h2>
+    <p>If you're ready to make your content next level, let's work together!</p>
+    <a href="mailto:harzzedixbusiness@gmail.com" class="btn">📩 Hire Me via Email</a>
+  </section>
+
+  <footer>
+    © 2025 Harzzedix Editing -- Built with ❤️ by Harzz
+  </footer>
+
+  <script>
+    // Scroll animation when section is visible
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+
+</body>
+</html>
